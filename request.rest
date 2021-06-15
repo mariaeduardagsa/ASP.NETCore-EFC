@@ -1,0 +1,94 @@
+@baseUrl =  https://localhost:5001/api/Colaborador
+
+
+GET {{baseUrl}}
+
+###
+
+
+GET {{baseUrl}}/4
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "Nome": "Maria Eduarda",
+    "Sexo": "Feminino",
+    "DataDeNascimento": "25/11/1999",
+    "Cargo": "Desenvolvedora",
+    "Ativo": true
+    
+}
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "Nome": "Saulo",
+    "Sexo": "Masculino",
+    "DataDeNascimento": "25/11/1997",
+    "Cargo": "Líder de Projetos",
+    "Ativo": true
+    
+}
+
+###
+
+POST {{baseUrl}}
+Content-Type: application/json
+
+{
+    "Nome": "Adner",
+    "Sexo": "Masculino",
+    "DataDeNascimento": "09/01/1987",
+    "Cargo": "Zelador",
+    "Ativo": false
+    
+}
+
+###
+
+PUT {{baseUrl}}/1
+Content-Type: application/json
+
+{
+    "Nome": "Maria Eduarda Guimarães",
+    "Sexo": "Feminino",
+    "DataDeNascimento": "25/11/1999",
+    "Cargo": "Desenvolvedora",
+    "Ativo": true
+}
+
+###
+
+PUT {{baseUrl}}/2
+Content-Type: application/json
+
+{
+    "Nome": "Saulo Oliveira",
+    "Sexo": "Masculino",
+    "DataDeNascimento": "25/11/1997",
+    "Cargo": "Gerente de Projetos",
+    "Ativo": false
+}
+
+###
+
+PUT {{baseUrl}}/3
+Content-Type: application/json
+
+{
+    "Nome": "Adner Campos",
+    "Sexo": "Masculino",
+    "DataDeNascimento": "09/01/1987",
+    "Cargo": "Zelador Chefe",
+    "Ativo": true
+}
+
+###
+
+DELETE {{baseUrl}}/3
